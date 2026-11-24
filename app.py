@@ -6,7 +6,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 # These can be set from Helm (values.yaml -> env in deployment.yaml)
-MESSAGE = os.getenv("APP_MESSAGE", "Hello from Abhay!")
+MESSAGE = os.getenv("APP_MESSAGE", "Hello from Abhay and i build this page!")
 VERSION = os.getenv("APP_VERSION", "1.0.0")
 
 
